@@ -1,23 +1,23 @@
-    <!-- Firebase SDKs -->
+    <!-- Firebase SDKs (Compat version) -->
     <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
 
     <script>
-      // 1. PASTE YOUR REAL KEYS HERE (Replace the text below)
+      // I have pasted your REAL keys here
       const firebaseConfig = {
-        apiKey: "PASTE_YOUR_REAL_KEY_HERE",
+        apiKey: "AIzaSyAcbUqDrvnpu_aqQqUiwZfAuayfgNbsfTw",
         authDomain: "queen-burger4.firebaseapp.com",
         projectId: "queen-burger4",
-        storageBucket: "queen-burger4.appspot.com",
-        messagingSenderId: "PASTE_SENDER_ID",
-        appId: "PASTE_APP_ID"
+        storageBucket: "queen-burger4.firebasestorage.app",
+        messagingSenderId: "579501420609",
+        appId: "1:579501420609:web:2682459182039b219616c0"
       };
 
-      // 2. Initialize Firebase
+      // Initialize Firebase
       firebase.initializeApp(firebaseConfig);
       const db = firebase.firestore();
 
-      // 3. Load Orders Function
+      // Load Orders Function
       async function loadOrders() {
           const tableBody = document.getElementById('ordersBody');
           tableBody.innerHTML = '<tr><td colspan="6">Loading...</td></tr>';
