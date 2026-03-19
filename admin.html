@@ -1,4 +1,49 @@
-    <!-- Firebase SDKs (Compat version) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard - Queen Burgers</title>
+    <!-- Make sure your <style> tag is here in the head -->
+    <style>
+        /* ... your css styles ... */
+    </style>
+</head>
+<body>
+
+    <!-- PASTE THE TABLE CODE HERE -->
+    <div class="container">
+        <h2>Queen Burgers Admin</h2>
+        <button onclick="loadOrders()" style="padding: 10px; cursor: pointer;">Refresh Orders</button>
+        
+        <table id="ordersTable">
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Items</th>
+                    <th>Total</th>
+                    <th>Proof</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="ordersBody">
+                <!-- Orders will appear here -->
+            </tbody>
+        </table>
+    </div>
+    <!-- END OF PASTE -->
+
+    <!-- PUT YOUR SCRIPTS HERE (After the table!) -->
+    <script src="...firebase..."></script>
+    <script>
+       // ... your firebase config and loadOrders function ...
+    </script>
+
+</body>
+</html>
+
+
+<!-- Firebase SDKs (Compat version) -->
     <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
 
